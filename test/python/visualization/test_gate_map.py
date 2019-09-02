@@ -84,21 +84,12 @@ class TestGraphDist(QiskitTestCase):
         self.ax1_bounds_x, self.ax1_bounds_y = ax1.get_xlim(), ax1.get_ylim()
         self.ax2_bounds_x, self.ax2_bounds_y = ax2.get_xlim(), ax2.get_ylim()
         self.size = 4
-<<<<<<< HEAD
-        self.real_values = [self.ax1_x1-self.ax1_x0, self.ax1_y1-self.ax1_y0,
-                            self.ax2_x1-self.ax2_x0, self.ax2_y1-self.ax2_y0]
-        self.abs_values = [self.ax1_bounds_x[0]-self.ax1_bounds_x[1],
-                           self.ax1_bounds_y[0]-self.ax1_bounds_y[1],
-                           self.ax2_bounds_x[0]-self.ax2_bounds_x[1],
-                           self.ax2_bounds_y[0]-self.ax2_bounds_y[1]]
-=======
         self.real_values = [self.ax1_x1 - self.ax1_x0, self.ax1_y1 - self.ax1_y0,
                             self.ax2_x1 - self.ax2_x0, self.ax2_y1 - self.ax2_y0]
         self.abs_values = [self.ax1_bounds_x[0] - self.ax1_bounds_x[1],
                            self.ax1_bounds_y[0] - self.ax1_bounds_y[1],
                            self.ax2_bounds_x[0] - self.ax2_bounds_x[1],
                            self.ax2_bounds_y[0] - self.ax2_bounds_y[1]]
->>>>>>> upstream/master
         self.val = []
         for i in range(4):
             val = (self.size / self.real_values[i]) * self.abs_values[i]
